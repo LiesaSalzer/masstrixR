@@ -4,9 +4,18 @@
 \alias{createResultsSet}
 \title{Function that calculates scores for a query and a list of result spectra}
 \usage{
-createResultsSet(querySpectrum, queryResults, align = TRUE,
-  mzTol = 0.005, mzTolType = "abs", plotIt = TRUE,
-  storePlot = FALSE, prefix = "", dataPath = "", title = NA)
+createResultsSet(
+  querySpectrum,
+  queryResults,
+  align = TRUE,
+  mzTol = 0.005,
+  mzTolType = "abs",
+  plotIt = TRUE,
+  storePlot = FALSE,
+  prefix = "",
+  dataPath = "",
+  title = NA
+)
 }
 \arguments{
 \item{querySpectrum}{A Spectrum2 object}

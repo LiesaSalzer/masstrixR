@@ -4,8 +4,13 @@
 \alias{searchByPrecursor}
 \title{Function to find MS2 spectra in a MS2 library for spectral matching. The search parameters are a given precursor m/z and potentially its type of adduct.}
 \usage{
-searchByPrecursor(precursorMz, ms2dbFileName, mzTol = 0.005,
-  mzTolType = "abs", precursorType = NA)
+searchByPrecursor(
+  precursorMz,
+  ms2dbFileName,
+  mzTol = 0.005,
+  mzTolType = "abs",
+  precursorType = NA
+)
 }
 \arguments{
 \item{precursorMz}{Mass of precursor for search}

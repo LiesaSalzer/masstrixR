@@ -2,23 +2,15 @@
 % Please edit documentation in R/MS1_AdductDbCreate.R
 \name{prepareIsoCompoundList}
 \alias{prepareIsoCompoundList}
-\title{This function generates isotopically labeled version of a given compound list. Calculations of isotopic exat mass are based on the sum formula and a selected isotope label. Metabolites can be either fully labeled or partially. In the later case the number of labeled atoms has to be defined. If the number exceeds the number of atoms a fully labeled molecule is produced.}
+\title{iso list}
 \usage{
-prepareIsoCompoundList(compoundList, isoLabel = "full", labeledElement,
-  noOfLabel = NULL)
-}
-\arguments{
-\item{compoundList}{List of compounds that shall be added to DB}
-
-\item{isoLabel}{Either "full" or "partial"}
-
-\item{labeledElement}{String indicating with element shall be replaced with a labeled version.}
-
-\item{noOfLabel}{A vector containing the number of labels.}
+prepareIsoCompoundList(
+  compoundList,
+  isoLabel = "full",
+  labeledElement,
+  noOfLabel = NULL
+)
 }
 \description{
-This function generates isotopically labeled version of a given compound list. Calculations of isotopic exat mass are based on the sum formula and a selected isotope label. Metabolites can be either fully labeled or partially. In the later case the number of labeled atoms has to be defined. If the number exceeds the number of atoms a fully labeled molecule is produced.
-}
-\author{
-Michael Witting, \email{michael.witting@helmholtz-muenchen.de}
+iso list
 }

@@ -9,7 +9,7 @@
 #'
 #' @author Michael Witting, \email{michael.witting@@helmholtz-muenchen.de}
 #'
-#' @importClassesFrom MSnbase Spectrum2 Spectra
+#' @importClassesFrom MSnbase Spectrum2 MSpectra
 #' @export
 readMassBankFile <- function(pathToMBFile) {
 
@@ -78,7 +78,7 @@ readMassBankFile <- function(pathToMBFile) {
                  centroided = TRUE)
 
   # make new Spectra object
-  mbRecord <- MSnbase::Spectra(ms2spec)
+  mbRecord <- MSnbase::MSpectra(ms2spec)
 
   # add annotations
   mcols(mbRecord)$id <- id
@@ -109,7 +109,7 @@ readMassBankFile <- function(pathToMBFile) {
 #' readMassBankFolder()
 #'
 #' @author Michael Witting, \email{michael.witting@@helmholtz-muenchen.de}
-#' @importClassesFrom MSnbase Spectra
+#' @importClassesFrom MSnbase MSpectra
 #' @export
 readMassBankFolder <- function(pathToFolder) {
 
@@ -117,7 +117,7 @@ readMassBankFolder <- function(pathToFolder) {
   massBankFiles <- list.files(pathToFolder, pattern = ".txt$", full.names = TRUE)
 
   #make empty spectra
-  librarySpectra <- new("Spectra")
+  librarySpectra <- new("MSpectra")
 
   #iterate through files
   for(massBankFile in massBankFiles) {

@@ -4,8 +4,13 @@
 \alias{prepareCompoundList}
 \title{Preparation of compound list}
 \usage{
-prepareCompoundList(compoundList, adductList = NA, rt = FALSE,
-  ccs = FALSE, extId = FALSE)
+prepareCompoundList(
+  compoundList,
+  adductList = NA,
+  rt = FALSE,
+  ccs = FALSE,
+  extId = FALSE
+)
 }
 \arguments{
 \item{compoundList}{List of compounds that shall be added to DB}

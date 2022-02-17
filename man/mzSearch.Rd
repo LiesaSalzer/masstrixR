@@ -4,9 +4,19 @@
 \alias{mzSearch}
 \title{Performing m/z search}
 \usage{
-mzSearch(peakList, dbFileName, mode = "onDisk", mzTol = 0.005,
-  mzTolType = "abs", rt = FALSE, rtTol = 0.5, rtTolType = "abs",
-  ccs = FALSE, ccsTol = 1, ccsTolType = "rel")
+mzSearch(
+  peakList,
+  dbFileName,
+  mode = "onDisk",
+  mzTol = 0.005,
+  mzTolType = "abs",
+  rt = FALSE,
+  rtTol = 0.5,
+  rtTolType = "abs",
+  ccs = FALSE,
+  ccsTol = 1,
+  ccsTolType = "rel"
+)
 }
 \arguments{
 \item{peakList}{Data frame containing the peaks of interest, minimum column is called mz ($mz) or m.z ($m.z) or mzmed ($mzmed)}
@@ -23,13 +33,11 @@ mzSearch(peakList, dbFileName, mode = "onDisk", mzTol = 0.005,
 
 \item{rtTol}{Maximum allowed tolerance for RT search in the unit of the DB and peaklist or in relative error}
 
-\item{rtTolType}{Defines the error type for RT search, "abs" is used for absolute RT error, "rel" for relative error}
+\item{rtTolType}{Defines the error type for CCS search, "abs" is used for absolute CCS error, "rel" for relative error}
 
 \item{ccs}{Boolean value indicating of CCS filtering shall be performed, if this option is true all entries in the DB need a CCS value}
 
 \item{ccsTol}{Maximum allowed tolerance for CCS search}
-
-\item{rtTolType}{Defines the error type for CCS search, "abs" is used for absolute CCS error, "rel" for relative error}
 }
 \value{
 Returns a data frame with results of the annotation. If for one single m/z value multiple annotations are found, each annotation is represented as individual row.

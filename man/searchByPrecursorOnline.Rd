@@ -4,8 +4,12 @@
 \alias{searchByPrecursorOnline}
 \title{This function reconstructs a Ms2 spectrum for all fragments with a correlation value bigger than a set cut-off}
 \usage{
-searchByPrecursorOnline(precursor, error = 0.01, errorType = "abs",
-  precursorType = "[M+H]+")
+searchByPrecursorOnline(
+  precursor,
+  error = 0.01,
+  errorType = "abs",
+  precursorType = "[M+H]+"
+)
 }
 \arguments{
 \item{error}{numeric value for maximum error}

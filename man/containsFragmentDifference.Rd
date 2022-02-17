@@ -4,8 +4,12 @@
 \alias{containsFragmentDifference}
 \title{This function allows to search for a specific mass difference between two fragments}
 \usage{
-containsFragmentDifference(ms2spectrum, fragmentMassDifference,
-  mzTol = 0.005, mzTolType = "abs")
+containsFragmentDifference(
+  ms2spectrum,
+  fragmentMassDifference,
+  mzTol = 0.005,
+  mzTolType = "abs"
+)
 }
 \arguments{
 \item{ms2spectrum}{A Spectrum2 in which the production ion shall be searched}
